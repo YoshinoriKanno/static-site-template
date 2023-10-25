@@ -43,7 +43,7 @@
     }
   }
 
-  .p-header-sticky__logo-ipet-ins-container {
+  .p-header-sticky__logo-container {
     position: relative;
 
     &::after {
@@ -69,7 +69,7 @@
     // margin-top: 7px;
   }
 
-  .p-header-sticky__logo-ipet-ins {
+  .p-header-sticky__logo {
     width: 200px;
 
     @include mq-cdt(tablet) {

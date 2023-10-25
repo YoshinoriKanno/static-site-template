@@ -399,10 +399,10 @@ body {
     width: unset;
   }
 }
-.p-header-sticky .p-header-sticky__logo-ipet-ins-container {
+.p-header-sticky .p-header-sticky__logo-container {
   position: relative;
 }
-.p-header-sticky .p-header-sticky__logo-ipet-ins-container::after {
+.p-header-sticky .p-header-sticky__logo-container::after {
   position: absolute;
   bottom: -3px;
   width: 200px;
@@ -413,19 +413,19 @@ body {
 }
 
 @media screen and (width >= 768px) {
-  .p-header-sticky .p-header-sticky__logo-ipet-ins-container::after {
+  .p-header-sticky .p-header-sticky__logo-container::after {
     right: -9px;
     bottom: 4px;
     width: 1px;
     height: 20px;
   }
 }
-.p-header-sticky .p-header-sticky__logo-ipet-ins {
+.p-header-sticky .p-header-sticky__logo {
   width: 200px;
 }
 
 @media screen and (width >= 768px) {
-  .p-header-sticky .p-header-sticky__logo-ipet-ins {
+  .p-header-sticky .p-header-sticky__logo {
     width: 300px;
   }
 }
@@ -616,16 +616,17 @@ body {
   }
 }
 
-.p-phase02 {
+.p-main {
   padding-bottom: 60px;
 }
 
 @media screen and (width >= 768px) {
-  .p-phase02 {
+  .p-main {
     padding-bottom: 100px;
   }
 }
-.p-phase02 .p-phase02__heading {
+
+.p-heading {
   margin-top: 48px;
   font-size: 30px;
   font-weight: bold;
@@ -635,18 +636,19 @@ body {
 }
 
 @media screen and (width >= 375px) {
-  .p-phase02 .p-phase02__heading {
+  .p-heading {
     margin-top: 64px;
     font-size: 36px;
   }
 }
 
 @media screen and (width >= 768px) {
-  .p-phase02 .p-phase02__heading {
+  .p-heading {
     font-size: 36px;
   }
 }
-.p-phase02 .p-phase02__catch {
+
+.p-catch {
   display: table;
   margin-right: auto;
   margin-left: auto;
@@ -657,25 +659,26 @@ body {
 }
 
 @media screen and (width >= 375px) {
-  .p-phase02 .p-phase02__catch {
+  .p-catch {
     font-size: 21px;
   }
 }
 
 @media screen and (width >= 768px) {
-  .p-phase02 .p-phase02__catch {
+  .p-catch {
     font-size: 21px;
   }
 }
 
 @media screen and (width >= 768px) {
-  .p-phase02 .p-phase02__row {
+  .p-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
 }
-.p-phase02 .p-phase02__card-heading {
+
+.p-card-heading {
   display: grid;
   align-items: center;
   justify-content: center;
@@ -688,17 +691,17 @@ body {
 }
 
 @media screen and (width >= 375px) {
-  .p-phase02 .p-phase02__card-heading {
+  .p-card-heading {
     font-size: 14px;
   }
 }
 
 @media screen and (width >= 1024px) {
-  .p-phase02 .p-phase02__card-heading {
+  .p-card-heading {
     font-size: 20px;
   }
 }
-.p-phase02 .p-phase02__logo-sub {
+.p-logo-sub {
   margin-top: 8px;
   font-size: 13px;
   color: #1fa6e4;
@@ -706,17 +709,18 @@ body {
 }
 
 @media screen and (width >= 375px) {
-  .p-phase02 .p-phase02__logo-sub {
+  .p-logo-sub {
     font-size: 16px;
   }
 }
 
 @media screen and (width >= 768px) {
-  .p-phase02 .p-phase02__logo-sub {
+  .p-logo-sub {
     font-size: 20px;
   }
 }
-.p-phase02 .p-phase02__points {
+
+.p-points {
   margin-top: 16px;
   font-size: 12px;
   line-height: 1;
@@ -724,35 +728,36 @@ body {
 }
 
 @media screen and (width >= 375px) {
-  .p-phase02 .p-phase02__points {
+  .p-points {
     font-size: 16px;
   }
 }
 
 @media screen and (width >= 768px) {
-  .p-phase02 .p-phase02__points {
+  .p-points {
     font-size: 15px;
   }
 }
 
 @media screen and (width >= 1024px) {
-  .p-phase02 .p-phase02__points {
+  .p-points {
     font-size: 24px;
   }
 }
-.p-phase02 .p-phase02__point {
+
+.p-point {
   display: inline-block;
   margin-right: 4px;
   margin-left: 4px;
 }
 
 @media screen and (width >= 768px) {
-  .p-phase02 .p-phase02__point {
+  .p-point {
     margin-right: 8px;
     margin-left: 8px;
   }
 }
-.p-phase02 .p-phase02__point::before {
+.p-point::before {
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -766,7 +771,7 @@ body {
 }
 
 @media screen and (width >= 375px) {
-  .p-phase02 .p-phase02__point::before {
+  .p-point::before {
     width: 16px;
     height: 16px;
     background-size: 16px;
@@ -774,7 +779,7 @@ body {
 }
 
 @media screen and (width >= 768px) {
-  .p-phase02 .p-phase02__point::before {
+  .p-point::before {
     width: 15px;
     height: 15px;
     background-size: 15px;
@@ -782,7 +787,7 @@ body {
 }
 
 @media screen and (width >= 1024px) {
-  .p-phase02 .p-phase02__point::before {
+  .p-point::before {
     width: 20px;
     height: 20px;
     margin-right: 8px;
@@ -790,60 +795,65 @@ body {
     background-size: 20px;
   }
 }
-.p-phase02 .p-phase02__card {
+
+.p-card {
   margin-top: 32px;
   border-color: #1fa6e4;
   border-style: solid;
   border-width: 2px;
   border-radius: 10px;
 }
-.p-phase02 .p-phase02__card.p-phase02__card--light {
+.p-card.p-card--light {
   border-color: #e80000;
 }
-.p-phase02 .p-phase02__card.p-phase02__card--light .p-phase02__card-heading {
+.p-card.p-card--light .p-card-heading {
   background-color: #e80000;
 }
-.p-phase02 .p-phase02__card.p-phase02__card--light .p-phase02__logo-sub {
+.p-card.p-card--light .p-logo-sub {
   color: #e80000;
 }
-.p-phase02 .p-phase02__body {
+
+.p-body {
   padding: 24px 16px;
 }
-.p-phase02 .p-phase02__uchinoko-logo {
+
+.p-logo {
   max-width: 153.6px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media screen and (width >= 375px) {
-  .p-phase02 .p-phase02__uchinoko-logo {
+  .p-logo {
     max-width: 179.2px;
   }
 }
 
 @media screen and (width >= 1024px) {
-  .p-phase02 .p-phase02__uchinoko-logo {
+  .p-logo {
     max-width: 224px;
   }
 }
-.p-phase02 .p-phase02__uchinoko-light-logo {
+
+.p-light-logo {
   max-width: 244.32px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media screen and (width >= 375px) {
-  .p-phase02 .p-phase02__uchinoko-light-logo {
+  .p-light-logo {
     max-width: 285.04px;
   }
 }
 
 @media screen and (width >= 1024px) {
-  .p-phase02 .p-phase02__uchinoko-light-logo {
+  .p-light-logo {
     max-width: 356.3px;
   }
 }
-.p-phase02 .c-cta-button {
+
+.c-cta-button {
   width: 100%;
   margin-top: 16px;
   font-size: 14px;
@@ -852,13 +862,13 @@ body {
 }
 
 @media screen and (width >= 375px) {
-  .p-phase02 .c-cta-button {
+  .c-cta-button {
     font-size: 18px;
   }
 }
 
 @media screen and (width >= 1024px) {
-  .p-phase02 .c-cta-button {
+  .c-cta-button {
     font-size: 26px;
   }
 }

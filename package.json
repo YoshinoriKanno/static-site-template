@@ -1,7 +1,7 @@
 {
-  "name": "asoview-lp",
+  "name": "static-site-template",
   "version": "1.0.0",
-  "description": "## iPet LPコーディング",
+  "description": "Static Site Template description",
   "main": "index.js",
   "scripts": {
     "watch": "npm run watch:sass & npm run watch:tailwindcss",
