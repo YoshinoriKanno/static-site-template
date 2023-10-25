@@ -1,0 +1,116 @@
+.c-cta-balloon {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 1;
+  background-color: $color-secondary;
+  border-radius: 9999px;
+
+  @include mq-cdt(laptop-l) {
+    height: 36px;
+    font-size: 20px;
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin-right: auto;
+    margin-left: auto;
+    content: '';
+    border-color: #fff200 transparent transparent;
+    border-style: solid;
+    border-width: 10px 6px 0;
+  }
+}
+
+.c-cta-button {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+
+  @include mq-cdt(laptop) {
+    width: 220px;
+    height: 66px;
+  }
+
+  @include mq-cdt(laptop-l) {
+    width: 302px;
+    height: 66px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    content: '';
+    background-size: 16px;
+    border-radius: 9999px;
+
+    @include mq-cdt(laptop) {
+      right: 12px;
+      width: 20px;
+      height: 20px;
+      background-size: 20px;
+    }
+
+    @include mq-cdt(laptop-l) {
+      right: 23px;
+      width: 20px;
+      height: 20px;
+      background-size: 20px;
+    }
+  }
+
+  &.c-cta-button--uchinoko {
+    background-color: $color-tertiary;
+    box-shadow: 0 4px 0 0 #0c89c3;
+
+    @include mq-cdt(laptop) {
+      box-shadow: 0 8px 0 0 #0c89c3;
+    }
+
+    @include mq-cdt(laptop-l) {
+      box-shadow: 0 8px 0 0 #0c89c3;
+    }
+
+    &::after {
+      background-image: url('../images/circle-chevron-right-blue.svg');
+    }
+  }
+
+  &.c-cta-button-uchinoko-light {
+    background-color: $color-quaternary;
+    box-shadow: 0 4px 0 0 #b20606;
+
+    @include mq-cdt(laptop) {
+      box-shadow: 0 8px 0 0 #b20606;
+    }
+
+    @include mq-cdt(laptop-l) {
+      box-shadow: 0 8px 0 0 #b20606;
+    }
+
+    &::after {
+      background-image: url('../images/circle-chevron-right-red.svg');
+    }
+  }
+}

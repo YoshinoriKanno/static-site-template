@@ -1,0 +1,101 @@
+.l-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-weight: normal;
+  background-image: url('../images/bgi.png');
+  background-size: 160px;
+
+  .l-footer__links {
+    padding: 30px 0;
+    background-color: rgb(190 168 139 / 30%);
+  }
+
+  .l-footer__links-row {
+    font-size: 11px;
+    line-height: 2;
+    text-align: center;
+
+    @include mq-cdt(mobile-m) {
+      font-size: 12px;
+    }
+
+    @include mq-cdt(laptop-l) {
+      font-size: 14px;
+    }
+  }
+
+  .l-footer__links-col {
+    display: inline;
+
+    &::after {
+      margin-right: 0.2em;
+      margin-left: 0.4em;
+      content: '|';
+    }
+
+    // 最後の要素の後には | を表示しない
+    &:last-child::after {
+      content: '';
+    }
+
+    // 3つ目の要素で改行
+    &:nth-child(3n)::after {
+      white-space: pre;
+      content: '\A';
+
+      @include mq-cdt(tablet) {
+        margin-right: 0.2em;
+        margin-left: 0.4em;
+        content: '|';
+      }
+    }
+  }
+
+  .l-footer__links-note {
+    margin-top: 20px;
+    margin-right: -1em;
+    margin-left: -1em;
+    font-size: 10px;
+    text-align: center;
+
+    @include mq-cdt(laptop-l) {
+      font-size: 12px;
+    }
+  }
+
+  .l-footer__container {
+    padding: 20px 0;
+  }
+
+  .l-footer__note {
+    margin-left: 1em;
+    font-size: 10px;
+    text-indent: -1em;
+
+    @include mq-cdt(laptop-l) {
+      font-size: 12px;
+    }
+  }
+
+  .l-footer__note-list {
+    margin-top: 0.5em;
+
+    // 最初の要素は上のマージンを表示しない
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .l-footer__copy-right {
+    margin-top: 20px;
+    margin-right: -1em;
+    margin-left: -1em;
+    font-size: 10px;
+    text-align: center;
+
+    @include mq-cdt(laptop-l) {
+      font-size: 12px;
+    }
+  }
+}

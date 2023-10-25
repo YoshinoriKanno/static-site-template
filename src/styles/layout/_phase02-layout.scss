@@ -1,0 +1,55 @@
+.l-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.l-container {
+  width: 100%;
+  max-width: (1000px + 32px * 2);
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq-cdt(tablet) {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .l-container__px {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @include mq-cdt(laptop-l) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.l-main-content {
+  width: 100%;
+  background-image: url('../images/bgi.png');
+  background-size: 160px;
+
+  @include mq-cdt(tablet) {
+    position: absolute;
+    position: relative;
+    left: 50%;
+    width: 375px;
+
+    // margin-top: 40px;
+    margin-left: -20px;
+    border-radius: 60px 60px 0 0;
+    box-shadow: 0 0 20px #00000029;
+  }
+
+  @include mq-cdt(laptop) {
+    margin-left: unset;
+  }
+
+  @include mq-cdt(laptop-l) {
+    width: 500px;
+  }
+}

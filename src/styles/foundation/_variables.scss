@@ -1,0 +1,42 @@
+$color-bg-drawer: #f6f5f4;
+$color-text: #555;
+$color-border: #bfbfbf;
+$color-primary: #c11920;
+$color-secondary: #fff100;
+$color-tertiary: #1fa6e4;
+$color-quaternary: #e80000;
+
+// $color-quinary: #F5F5F5;
+// $color-senary: #F5F5F5;
+// $color-septenary: #F5F5F5;
+// $color-octonary: #F5F5F5;
+// $color-nonary: #F5F5F5;
+// $color-denary: #F5F5F5;
+// $color-elevenary: #F5F5F5;
+// $color-twelveary: #F5F5F5;
+// $color-thirteenary: #F5F5F5;
+// $color-fourteenary: #F5F5F5;
+// $color-fifteenary: #F5F5F5;
+// $color-sixteenary: #F5F5F5;
+
+$breakpoints-cdt: (
+  'mobile-s': 'screen and (min-width: 320px)',
+  'mobile-m': 'screen and (min-width: 375px)',
+  // スクリーンサイズが425px以上の場合に適用
+  'mobile-l': 'screen and (min-width: 425px)',
+  // スクリーンサイズが768px以上の場合に適用
+  'tablet': 'screen and (min-width: 768px)',
+  'laptop': 'screen and (min-width: 1024px)',
+  'laptop-l': 'screen and (min-width: 1440px)',
+  'four-k': 'screen and (min-width: 2560px)',
+) !default;
+
+// $breakpoints-tw: (
+//   'sm': 'screen and (min-width: 640px)',
+//   'md': 'screen and (min-width: 768px)',
+//   'lg': 'screen and (min-width: 1024px)',
+//   'xl': 'screen and (min-width: 1280px)',
+//   '2xl': 'screen and (min-width: 1536px)'
+// ) !default;
+
+$heigth-header: 58px;

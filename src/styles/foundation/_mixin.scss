@@ -1,0 +1,61 @@
+@mixin lists {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@mixin list {
+  list-style: none;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+@mixin drawer-text-anchor {
+  color: $color-text;
+  text-decoration: none;
+}
+
+@mixin drawer-bar-anchor {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 14px;
+  line-height: 125%;
+  color: $color-text;
+  text-decoration: none;
+  background-color: #fff;
+
+  @include mq-cdt(laptop) {
+    height: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    background-color: #f5fafd;
+  }
+}
+
+@mixin mq-cdt($breakpoint-cdt) {
+  @media #{map-get($breakpoints-cdt, $breakpoint-cdt)} {
+    @content;
+  }
+}
+
+@mixin button($width, $height) {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  width: $width;
+  height: $height;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background-color: red;
+  border-radius: 9999px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}

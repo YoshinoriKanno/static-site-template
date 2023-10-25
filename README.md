@@ -1,1 +1,1 @@
-# static-site-template
+# ipet-lp

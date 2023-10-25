@@ -1,0 +1,88 @@
+.p-header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 3px 10px #00000029;
+
+  .p-header-sticky__container {
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    width: 200px;
+    height: 58px;
+    margin-right: -4px;
+    margin-left: -4px;
+
+    @include mq-cdt(tablet) {
+      grid-template-columns: auto auto;
+      width: unset;
+      height: 70px;
+      margin-right: unset;
+      margin-left: unset;
+    }
+  }
+
+  .p-header-sticky__logos {
+    display: grid;
+
+    // height: 58px;
+    grid-template-rows: auto auto;
+    gap: 6px;
+    align-items: center;
+    justify-content: start;
+    width: 200px;
+
+    @include mq-cdt(tablet) {
+      grid-template-rows: unset;
+      grid-template-columns: auto auto;
+      gap: 16px;
+      width: unset;
+
+      // height: 70px;
+    }
+  }
+
+  .p-header-sticky__logo-ipet-ins-container {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: -3px;
+      width: 200px;
+      height: 1px;
+      margin-top: 20px;
+      content: '';
+      background-color: #92826b;
+
+      @include mq-cdt(tablet) {
+        right: -9px;
+        bottom: 4px;
+        width: 1px;
+        height: 20px;
+      }
+    }
+  }
+
+  .p-header-sticky__logo-dai-ichi-life-container {
+    // width: (76px * 2);
+    // margin-top: 7px;
+  }
+
+  .p-header-sticky__logo-ipet-ins {
+    width: 200px;
+
+    @include mq-cdt(tablet) {
+      width: (200px * 1.5);
+    }
+  }
+
+  .p-header-sticky__logo-dai-ichi-life {
+    width: 76px;
+
+    @include mq-cdt(tablet) {
+      width: (76px * 1.5);
+      margin-top: 13px;
+    }
+  }
+}
