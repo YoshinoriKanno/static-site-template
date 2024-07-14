@@ -10,7 +10,7 @@
   margin-top: 48px;
   font-size: 30px;
   font-weight: bold;
-  line-height: (54 / 36);
+  line-height: math.div(54, 36);
   color: $color-primary;
   text-align: center;
 
@@ -30,7 +30,7 @@
   margin-left: auto;
   font-size: 18px;
   font-weight: bold;
-  line-height: (31 / 21);
+  line-height: math.div(31, 21);
   background: linear-gradient(transparent 60%, $color-secondary);
 
   @include mq-cdt(mobile-m) {
@@ -215,25 +215,5 @@
 
   @include mq-cdt(laptop) {
     max-width: (509px * 0.7);
-  }
-}
-
-.c-cta-button {
-  width: 100%;
-  margin-top: 16px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-
-  @include mq-cdt(mobile-m) {
-    font-size: 18px;
-  }
-
-  @include mq-cdt(tablet) {
-    // font-size: 18px;
-  }
-
-  @include mq-cdt(laptop) {
-    font-size: 26px;
   }
 }

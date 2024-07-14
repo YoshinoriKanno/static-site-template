@@ -47,8 +47,7 @@
 
 @mixin button($width, $height) {
   display: grid;
-  align-content: center;
-  justify-content: center;
+  place-content: center center;
   width: $width;
   height: $height;
   font-size: 18px;

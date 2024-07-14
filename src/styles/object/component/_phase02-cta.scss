@@ -39,12 +39,22 @@
   align-items: center;
   justify-content: center;
   width: 160px;
+  width: 100%;
   height: 40px;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
   border-radius: 10px;
+
+  @include mq-cdt(mobile-m) {
+    font-size: 18px;
+  }
 
   @include mq-cdt(laptop) {
     width: 220px;
     height: 66px;
+    font-size: 26px;
   }
 
   @include mq-cdt(laptop-l) {

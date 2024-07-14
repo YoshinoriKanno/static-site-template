@@ -7,7 +7,10 @@
     "watch": "npm run watch:sass & npm run watch:tailwindcss",
     "watch:tailwindcss": "npx tailwindcss -i ./src/tailwindcss-input.css -o ./dist/styles/tailwind.css --watch",
     "watch:sass": "sass --no-source-map --watch src/styles/:dist/styles/",
-    "format": "eslint dist/**/*.js --fix && prettier --write dist/**/*.{js,css,html} && stylelint 'src/**/*.scss' --fix && stylelint 'dist/**/*.css' --fix",
+    "eslint": "eslint dist/**/*.js --fix",
+    "prettier": "prettier --write dist/**/*.{js,css,html}",
+    "stylelint": "stylelint 'src/**/*.scss' --fix && stylelint 'dist/**/*.css' --fix",
+    "format": "npm run eslint && npm run prettier && npm run stylelint",
     "prepare": "husky install"
   },
   "keywords": [],
