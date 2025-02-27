@@ -101,10 +101,6 @@
     @include mq-cdt(laptop-l) {
       box-shadow: 0 8px 0 0 #0c89c3;
     }
-
-    &::after {
-      background-image: url('../images/circle-chevron-right-blue.svg');
-    }
   }
 
   &.c-cta-button-uchinoko-light {
@@ -117,10 +113,6 @@
 
     @include mq-cdt(laptop-l) {
       box-shadow: 0 8px 0 0 #b20606;
-    }
-
-    &::after {
-      background-image: url('../images/circle-chevron-right-red.svg');
     }
   }
 }

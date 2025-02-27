@@ -30,8 +30,6 @@
 
 .l-main-content {
   width: 100%;
-  background-image: url('../images/bgi.png');
-  background-size: 160px;
 
   @include mq-cdt(tablet) {
     position: absolute;

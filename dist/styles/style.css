@@ -1,26 +1,6 @@
 @charset "UTF-8";
 @import 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap';
-
-@font-face {
-  font-family: mobo;
-
-  /* フォントファイルへのパスとフォーマット */
-  font-weight: bold;
-
-  /* フォントの名前 */
-  src: url('../fonts/MOBO-Bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: mobo;
-
-  /* フォントファイルへのパスとフォーマット */
-  font-weight: 600;
-
-  /* フォントの名前 */
-  src: url('../fonts/MOBO-SemiBold.woff2') format('woff2');
-}
 html {
   scroll-behavior: smooth;
 }
@@ -31,8 +11,7 @@ body {
   width: 100%;
   min-height: 100dvh;
   margin: 0;
-  font-family: mobo, 'Noto Sans JP', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo,
-    sans-serif;
+  font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
   font-weight: 600;
   line-height: 160%;
   color: #555;
@@ -73,8 +52,6 @@ body {
 
 .l-main-content {
   width: 100%;
-  background-image: url('../images/bgi.png');
-  background-size: 160px;
 }
 
 @media screen and (width >= 768px) {
@@ -106,8 +83,6 @@ body {
   bottom: 0;
   width: 100%;
   font-weight: normal;
-  background-image: url('../images/bgi.png');
-  background-size: 160px;
 }
 .l-footer .l-footer__links {
   padding: 30px 0;
@@ -179,12 +154,6 @@ body {
   .l-footer .l-footer__note {
     font-size: 12px;
   }
-}
-.l-footer .l-footer__note-list {
-  margin-top: 0.5em;
-}
-.l-footer .l-footer__note-list:first-child {
-  margin-top: 0;
 }
 .l-footer .l-footer__copy-right {
   margin-top: 20px;
@@ -318,9 +287,6 @@ body {
     box-shadow: 0 8px 0 0 #0c89c3;
   }
 }
-.c-cta-button.c-cta-button--uchinoko::after {
-  background-image: url('../images/circle-chevron-right-blue.svg');
-}
 .c-cta-button.c-cta-button-uchinoko-light {
   background-color: #e80000;
   box-shadow: 0 4px 0 0 #b20606;
@@ -336,9 +302,6 @@ body {
   .c-cta-button.c-cta-button-uchinoko-light {
     box-shadow: 0 8px 0 0 #b20606;
   }
-}
-.c-cta-button.c-cta-button-uchinoko-light::after {
-  background-image: url('../images/circle-chevron-right-red.svg');
 }
 
 .c-button {
@@ -776,17 +739,12 @@ body {
   margin-right: 4px;
   vertical-align: bottom;
   content: '';
-  background-image: url('../images/icon-circle-check-yellow.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 12px;
 }
 
 @media screen and (width >= 375px) {
   .p-point::before {
     width: 16px;
     height: 16px;
-    background-size: 16px;
   }
 }
 

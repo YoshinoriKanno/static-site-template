@@ -129,16 +129,10 @@
     margin-right: 4px;
     vertical-align: bottom;
     content: '';
-    background-image: url('../images/icon-circle-check-yellow.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 12px;
 
     @include mq-cdt(mobile-m) {
-      // margin-right: 8px;
       width: 16px;
       height: 16px;
-      background-size: 16px;
     }
 
     @include mq-cdt(tablet) {

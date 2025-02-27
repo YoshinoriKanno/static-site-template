@@ -3,8 +3,6 @@
   bottom: 0;
   width: 100%;
   font-weight: normal;
-  background-image: url('../images/bgi.png');
-  background-size: 160px;
 
   .l-footer__links {
     padding: 30px 0;
@@ -75,15 +73,6 @@
 
     @include mq-cdt(laptop-l) {
       font-size: 12px;
-    }
-  }
-
-  .l-footer__note-list {
-    margin-top: 0.5em;
-
-    // 最初の要素は上のマージンを表示しない
-    &:first-child {
-      margin-top: 0;
     }
   }
 
