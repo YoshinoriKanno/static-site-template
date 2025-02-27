@@ -7,14 +7,14 @@
 @import 'foundation/variables';
 @import 'foundation/function';
 @import 'foundation/mixin';
-@import 'foundation/phase02-base';
+@import 'foundation/base';
 
 // ==========================================================================
 // Layout
 // ==========================================================================
 
-@import 'layout/phase02-layout';
-@import 'layout/phase02-footer';
+@import 'layout/layout';
+@import 'layout/footer';
 
 // ==========================================================================
 // Object
@@ -24,8 +24,8 @@
 // Component
 // -----------------------------------------------------------------
 
-@import 'object/component/phase02-cta';
-@import 'object/component/phase02-button';
+@import 'object/component/cta';
+@import 'object/component/button';
 
 // -----------------------------------------------------------------
 // Project
