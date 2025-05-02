@@ -271,38 +271,6 @@ body {
     background-size: 20px;
   }
 }
-.c-cta-button.c-cta-button--uchinoko {
-  background-color: #1fa6e4;
-  box-shadow: 0 4px 0 0 #0c89c3;
-}
-
-@media screen and (width >= 1024px) {
-  .c-cta-button.c-cta-button--uchinoko {
-    box-shadow: 0 8px 0 0 #0c89c3;
-  }
-}
-
-@media screen and (width >= 1440px) {
-  .c-cta-button.c-cta-button--uchinoko {
-    box-shadow: 0 8px 0 0 #0c89c3;
-  }
-}
-.c-cta-button.c-cta-button-uchinoko-light {
-  background-color: #e80000;
-  box-shadow: 0 4px 0 0 #b20606;
-}
-
-@media screen and (width >= 1024px) {
-  .c-cta-button.c-cta-button-uchinoko-light {
-    box-shadow: 0 8px 0 0 #b20606;
-  }
-}
-
-@media screen and (width >= 1440px) {
-  .c-cta-button.c-cta-button-uchinoko-light {
-    box-shadow: 0 8px 0 0 #b20606;
-  }
-}
 
 .c-button {
   z-index: 1;

@@ -89,30 +89,4 @@
       background-size: 20px;
     }
   }
-
-  &.c-cta-button--uchinoko {
-    background-color: $color-tertiary;
-    box-shadow: 0 4px 0 0 #0c89c3;
-
-    @include mq-cdt(laptop) {
-      box-shadow: 0 8px 0 0 #0c89c3;
-    }
-
-    @include mq-cdt(laptop-l) {
-      box-shadow: 0 8px 0 0 #0c89c3;
-    }
-  }
-
-  &.c-cta-button-uchinoko-light {
-    background-color: $color-quaternary;
-    box-shadow: 0 4px 0 0 #b20606;
-
-    @include mq-cdt(laptop) {
-      box-shadow: 0 8px 0 0 #b20606;
-    }
-
-    @include mq-cdt(laptop-l) {
-      box-shadow: 0 8px 0 0 #b20606;
-    }
-  }
 }
